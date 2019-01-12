@@ -1,0 +1,153 @@
+<!-- EVENT overall_footer_content_after -->
+</div>
+
+<!-- EVENT overall_footer_page_body_after -->
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+    <!-- INCLUDE navbar_footer.html -->
+
+    <div class="copyright">
+        <!-- EVENT overall_footer_copyright_prepend -->
+        <!-- {CREDIT_LINE} | SE Square Left by <a href="http://www.phpbb3bbcodes.com/">PhpBB3 BBCodes</a>-->
+        <!-- <br />{TRANSLATION_INFO} -->
+        <!-- EVENT overall_footer_copyright_append -->
+        <!-- <br />{DEBUG_OUTPUT} ENDIF -->
+        <!-- <br /><strong><a href="{U_ACP}">{L_ACP}</a></strong> -->
+
+        <div class="container ng-scope">
+            <div class="footer-logo"><img src="/forum/styles/se_square_left/theme/images/logo-footer.png" alt=""></div>
+            <div class="copyright-tytics">© tytics 2017</div>
+            <ul class="footer-links">
+                <li><a href="../tytics-101">tytics 101 </a>
+                </li>
+                <li><a href="../terms-and-conditions">Terms &amp; Conditions</a>
+                </li>
+                <li><a href="../privacy-policy">Privacy Policy</a>
+                </li>
+                <li><a href="../faq">FAQ</a>
+                </li>
+                <li><a href="../contact-us">Customer Support</a>
+                </li>
+                <li><a href="../cookie-policy">Cookie Policy</a>
+                </li>
+            </ul>
+            <div class="social-connect">
+                <a href="https://www.facebook.com/tytics/" class="link fb-link" target="_blank">
+                    <img src="/forum/styles/se_square_left/theme/images/icons/fb-icon.png" alt="">
+                </a>
+                <a href="https://twitter.com/tytics" class="link fb-link" target="_blank">
+                    <img src="/forum/styles/se_square_left/theme/images/icons/twitter-icon.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/tytics/" class="link fb-link" target="_blank">
+                    <img src="/forum/styles/se_square_left/theme/images/icons/instantgram-logo.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/company/10059829/" class="link fb-link" target="_blank">
+                    <img src="/forum/styles/se_square_left/theme/images/icons/linkedin-logo.png" alt="">
+                </a>
+                <a href="https://www.youtube.com/channel/UCGBMOWl6A0s0tkvNMKcfPKA" class="link fb-link" target="_blank">
+                    <img src="/forum/styles/se_square_left/theme/images/icons/youtube-icon.png" alt="">
+                </a>
+            </div>
+            <div class="footer-badges">
+                <div class="footer-badges-nested">
+                    <div class="footer-badge-sr">
+                        <a href="https://www.sportradar.com/" target="_blank">
+                            <img src="/forum/styles/se_square_left/theme/images/icons/sport_radar_logo.png" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="footer-badge-fsta">
+                        <a href="" target="_blank">
+                            <img src="/forum/styles/se_square_left/theme/images/icons/footer-badge-fsta.png"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-tytics-mobile">© tytics 2017</div>
+        </div>
+
+    </div>
+
+
+    <div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="{L_AJAX_ERROR_TITLE}"
+         data-ajax-error-text="{L_AJAX_ERROR_TEXT}" data-ajax-error-text-abort="{L_AJAX_ERROR_TEXT_ABORT}"
+         data-ajax-error-text-timeout="{L_AJAX_ERROR_TEXT_TIMEOUT}"
+         data-ajax-error-text-parsererror="{L_AJAX_ERROR_TEXT_PARSERERROR}">
+        <div id="darken" class="darken">&nbsp;</div>
+    </div>
+
+    <div id="phpbb_alert" class="phpbb_alert" data-l-err="{L_ERROR}"
+         data-l-timeout-processing-req="{L_TIMEOUT_PROCESSING_REQ}">
+        <a href="#" class="alert_close">
+            <i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+        </a>
+        <h3 class="alert_title">&nbsp;</h3>
+        <p class="alert_text"></p>
+    </div>
+    <div id="phpbb_confirm" class="phpbb_alert">
+        <a href="#" class="alert_close">
+            <i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+        </a>
+        <div class="alert_text"></div>
+    </div>
+</div>
+
+</div>
+
+<div>
+    <a id="bottom" class="anchor" accesskey="z"></a>
+    <!-- IF not S_IS_BOT -->{RUN_CRON_TASK}<!-- ENDIF -->
+</div>
+
+<script type="text/javascript" src="{T_JQUERY_LINK}"></script>
+<!-- IF S_ALLOW_CDN -->
+<script type="text/javascript">window.jQuery || document.write('\x3Cscript src="{T_ASSETS_PATH}/javascript/jquery.min.js?assets_version={T_ASSETS_VERSION}">\x3C/script>');</script><!-- ENDIF -->
+<script type="text/javascript" src="{T_ASSETS_PATH}/javascript/core.js?assets_version={T_ASSETS_VERSION}"></script>
+<!-- INCLUDEJS forum_fn.js -->
+<!-- INCLUDEJS ajax.js -->
+<!-- IF S_ALLOW_CDN -->
+<script type="text/javascript">
+  (function ($) {
+    var $fa_cdn = $('head').find('link[rel="stylesheet"]').first(),
+      $span = $('<span class="fa" style="display:none"></span>').appendTo('body');
+    if ($span.css('fontFamily') !== 'FontAwesome') {
+      $fa_cdn.after('<link href="{T_ASSETS_PATH}/css/font-awesome.min.css" rel="stylesheet">');
+      $fa_cdn.remove();
+    }
+    $span.remove();
+  })(jQuery);
+</script>
+<!-- ENDIF -->
+
+<!-- IF S_COOKIE_NOTICE -->
+<script src="{T_ASSETS_PATH}/cookieconsent/cookieconsent.min.js?assets_version={T_ASSETS_VERSION}"></script>
+<script>
+  window.addEventListener("load", function () {
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#0F538A"
+        },
+        "button": {
+          "background": "#E5E5E5"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "{LA_COOKIE_CONSENT_MSG}",
+        "dismiss": "{LA_COOKIE_CONSENT_OK}",
+        "link": "{LA_COOKIE_CONSENT_INFO}"
+      }
+    })
+  });
+</script>
+<!-- ENDIF -->
+
+<!-- EVENT overall_footer_after -->
+
+<!-- IF S_PLUPLOAD --><!-- INCLUDE plupload.html --><!-- ENDIF -->
+{$SCRIPTS}
+
+<!-- EVENT overall_footer_body_after -->
+
+</body>
+</html>
